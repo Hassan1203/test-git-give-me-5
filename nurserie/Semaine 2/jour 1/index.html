@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre réservation d'hotel</title>
+
+    <style>
+        .cgv {
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Votre réservation d'hotel</h1>
+    </center>
+    <center>
+        <h3> champs obligatoires</h3>
+    </center>
+    <form>
+        <label for="nom">Votre nom*:</label><br>
+        <input type="text" placeholder="nom de famille" name="nom" id="nom"><br>
+        <label for="prenom">Votre prénom*:</label><br>
+        <input type="text" placeholder="prénom" name="prenom" id="prenom"><br>
+
+        <label for="tele">Votre numéro de téléphone*:</label><br>
+        <input type="tel" placeholder="0604020103" name="tele" id="tele"><br>
+
+        <label for="mail">Adresse e-mail*:</label><br>
+        <input type="email" name="mail" id="mail"><br>
+
+        <label for="ville">Selectionner la ville:</label><br>
+        <select id="ville" name="ville" size="1">
+            <option value="lille">Lille</option>
+            <option value="paris" selected>Paris</option>
+            <option value="bordeaux">Bordeaux</option>
+            <option value="marseille">Marseille</option>
+            <option value="nantes">Nantes</option>
+            <option value="lyon">Lyon</option>
+            <option value="larochelle">La Rochelle</option>
+            <option value="poitiers">Poitiers</option>
+            <option value="toulouse">Toulouse</option>
+        </select>
+        <br>
+
+        <label for="dateariv">Date d'arrivée:</label><br>
+        <input type="date" name="dateariv" id="dateariv" min="2022-03-08"><br>
+
+        <label for="nb">Nombre de personnes*:</label><br>
+        <input type="number" name="nb" id="nb" min="1"><br>
+
+        <label for="option">Vos options:</label><br>
+        <label for="clim"> Climatisation</label>
+        <input type="checkbox" name="clim" value="Clim">
+        <label for="minibar"> Mini Bar</label>
+        <input type="checkbox" name="minibar" value="MiniBar">
+        <label for="jacuzzi"> Jacuzzi</label>
+        <input type="checkbox" name="jacuzzi" value="Jacuzzi">
+        <br>
+        <textarea name="message" rows="2" cols="30">Ajouter un commentaire.</textarea>
+        <br>
+        <label for="cgv">Acceptation des Conditions Générales de Vente (<a href="./pages/cgv.html"
+                class="cgv">CGV</a>)*</label><br>
+        <input type="radio" name="cgv" value="Accept">
+        <label for="accept"> J'accepte</label>
+        <input type="radio" name="cgv" value="Deny">
+        <label for="deny"> Je refuse</label><br>
+        <button type="submit" name="submit">Envoyer ma demande</button>
+    </form>
+</body>
+
+</html>
